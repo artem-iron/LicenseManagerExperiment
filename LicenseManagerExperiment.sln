@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronLib1", "IronLib1\IronLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronLib2", "IronLib2\IronLib2.csproj", "{08294F28-8040-4086-BC7C-7B7CABB268F8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{E8515ECD-A57C-47C1-B75C-A110B9CC7946}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\buildPackages.ps1 = scripts\buildPackages.ps1
+		scripts\updateAssemblyVersion.ps1 = scripts\updateAssemblyVersion.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
