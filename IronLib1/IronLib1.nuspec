@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>IronLib1</id>
+		<version>$version$</version>
+		<title>IronLib1 package</title>
+    <authors>iton-software</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <description>The IronLib1 package</description>
+  </metadata>
+  <files>
+		<file src=".\bin\$configuration$\net6.0\*.*" target="lib\net6.0" />
+	</files>
+</package>

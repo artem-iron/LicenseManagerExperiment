@@ -1,0 +1,10 @@
+﻿Console.WriteLine("Setting IronLib1 key");
+IronLib1.License.LicenseKey = "1234";
+Console.WriteLine("");
+Console.WriteLine("Setting IronLib2 key");
+IronLib2.License.LicenseKey = "5678";
+Console.WriteLine("");
+Console.WriteLine($"IronLib1 key: {IronLib1.License.LicenseKey}\n");
+Console.WriteLine($"IronLib2 key: {IronLib2.License.LicenseKey}\n");
+Console.WriteLine($"IronLib1 LicManager key: {LicensesNamespaceIronLib1.LicenseManager.LicenseKey}\n");
+Console.WriteLine($"IronLib2 LicManager key: {LicensesNamespaceIronLib2.LicenseManager.LicenseKey}\n");
