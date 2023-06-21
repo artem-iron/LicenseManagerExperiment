@@ -63,7 +63,7 @@ Write-Output "`n####### Changing directory to IronLib1 build folder"
 
 # ILRepack IronLib1
 Write-Output "`n####### ILRepacking IronLib1"
-& ..\..\..\..\tools\ILRepack.exe /parallel /union /wildcards /xmldocs /out:"C:\temp\IronLib1\IronLib1.dll" /log:"C:\temp\IronLib1.log" "IronLib1.dll" L*.dll
+& ..\..\..\..\tools\ILRepack.exe /parallel /union /wildcards /xmldocs /out:"C:\temp\IronLib1\IronLib1.dll" /log:"C:\temp\IronLib1.log" "IronLib1.dll" *.dll
 
 # Delete assemblies from the build folder
 Write-Output "`n####### Deleting all files from the build folder"
@@ -75,7 +75,7 @@ Write-Output "`n####### Changing directory to IronLib2 build folder"
 
 # ILRepack IronLib2
 Write-Output "`n####### ILRepacking IronLib2"
-& ..\..\..\..\tools\ILRepack.exe /parallel /union /wildcards /xmldocs /out:"C:\temp\IronLib2\IronLib2.dll" /log:"C:\temp\IronLib2.log" "IronLib2.dll" L*.dll
+& ..\..\..\..\tools\ILRepack.exe /parallel /union /wildcards /xmldocs /out:"C:\temp\IronLib2\IronLib2.dll" /log:"C:\temp\IronLib2.log" "IronLib2.dll" *.dll
 
 # Delete assemblies from the build folder
 Write-Output "`n####### Deleting all files from the build folder"
@@ -106,8 +106,8 @@ Write-Output "`n####### Packing IronLib1 1.0.0"
 & nuget pack IronLib1\IronLib1.nuspec -outputdirectory "$pathToLocalNugetSource" -properties "configuration=release;version=1.0.0"
 
 # Pack IronLib2
-Write-Output "`n####### Packing IronLib2 1.0.0"
-& nuget pack IronLib2\IronLib2.nuspec -outputdirectory "$pathToLocalNugetSource" -properties "configuration=release;version=1.0.0"
+Write-Output "`n####### Packing IronLib2 2.0.0"
+& nuget pack IronLib2\IronLib2.nuspec -outputdirectory "$pathToLocalNugetSource" -properties "configuration=release;version=2.0.0"
 
 # Clear the NuGet cache
 Write-Output "`n####### Clearing the NuGet cache"
